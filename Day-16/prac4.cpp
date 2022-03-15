@@ -1,4 +1,4 @@
-// Delimit using tab
+// Displaying giving tab
 
 #include<iostream>
 #include<fstream>
@@ -13,9 +13,8 @@ int main()
 		cout << "File did not open" << endl;
 	else
 	{
-		while(!input.eof())
+		while(!(input >> str >> str2).eof())
 		{
-			input >> str >> str2;
 			cout << str << '\t' << str2 << endl;
 		}
 	}
