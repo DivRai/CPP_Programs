@@ -13,9 +13,8 @@ int main()
 		cout<<"The File cannot open";
 	else
 	{
-		while(!fin.eof())
+		while(!(fin >> word).eof())
 		{
-			fin >> word;
 			count++;
 		}
 	}
