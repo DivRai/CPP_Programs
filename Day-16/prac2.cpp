@@ -1,3 +1,5 @@
+// reading file string by string using eof()
+
 #include<iostream>
 #include<fstream>
 using namespace std;
@@ -11,9 +13,8 @@ int main()
 		cout << "The file did not open" << endl;
 	else
 	{
-		while(!input.eof())
+		while(!(input >> str).eof())
 		{
-			input >> str;
 			cout << str << endl;
 		}
 	}
